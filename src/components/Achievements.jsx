@@ -54,6 +54,13 @@ export default function Achievements() {
       delay: "0s",
     },
     {
+      title: "Responsive Web Design Certificate",
+      description: "Earned certification from freeCodeCamp by building responsive websites using HTML and CSS, including Flexbox and CSS Grid.",
+      year: { date: "2024", type: "Certificate" },
+      image: "/images/Responsive_Web_Design_Certificate.png",
+      delay: "0s",
+    },
+    {
       title: "TOEIC English Proficiency Test",
       description: "Successfully passed the TOEIC with [540 score] exam demonstrating strong English listening and reading skills.",
       year: { date: "2025", type: "Certificate" },
