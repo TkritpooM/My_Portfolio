@@ -4,7 +4,7 @@ import { useInView } from "react-intersection-observer";
 export default function Projects() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [videoUrl, setVideoUrl] = useState("");
-  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.15, rootMargin: "350px 0px" });
 
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
   const [galleryIndex, setGalleryIndex] = useState(0);
@@ -89,6 +89,14 @@ export default function Projects() {
       video: "https://www.youtube.com/watch?v=TpA1m8MFseo",
       tech: ["Next.js", "React", "Tailwind CSS"],
       tags: ["Web App", "Gacha Simulator", "Fan Project", "Frontend"]
+    },
+    {
+      title: "Book Lending Tracker",
+      description: "A full-stack MERN application to track book lending and returns, allowing users to add, edit, delete, and mark books as returned with an easy-to-use interface.",
+      image: "/images/book_lending.png",
+      video: "https://www.youtube.com/watch?v=JG90SfsB7V8",
+      tech: ["React", "Express.js", "MongoDB", "Tailwind CSS"],
+      tags: ["Web App", "Library Management"]
     },
     {
       title: "Drink Picker",
